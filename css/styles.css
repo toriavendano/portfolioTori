@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Kinetika-Medium;
+    src: url(../fonts/kinetika/Kinetika-Medium.ttf);
+}
+
+@font-face {
+    font-family: Kinetika-Black;
+    src: url(../fonts/kinetika/Kinetika-Black.ttf);
+}
+
+:root {
+    --cor-fundo: #F5F5F5;
+    --cor-titulos: #F5F5F5; 
+    --cor-links: #483D8B;
+    --cor-botao-selecionado: #191970; 
+    --fonte-principal: 'Kinetika-Medium';
+    --fonte-titulos: 'Kinetika-Black'
+}
+
+body {
+    background: var(--cor-fundos);
+}
+
+header {
+    width: 100%;
+    background: url(../img/header.jpg);
+    text-align: center;
+    padding: 10% 0;
+}
+
+.caixa {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 50%;
+    text-align: center;
+}
+
+nav {
+	position: absolute;
+	top: 15%;
+    right: 10%;
+}
+
+nav li {
+    display: inline;
+    padding: 1em;
+}
+
+nav a {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: var(--cor-titulos);
+}
+
+nav a:hover {
+    color: var(--cor-links);
+    text-decoration: none;
+}
+
+h2 {
+    font-family: var(--fonte-titulos);
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin: 4% 0% 0% 0;
+}
+
+p {
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    line-height: 2em;
+    text-align: center;
+}
+
+.projetos {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projetos li {
+    display: inline-block;
+    padding: 1em;
+    margin: 4% 1.5%;
+    text-align: center;
+    vertical-align: top;
+    border: #000 solid 3px;
+    box-sizing: border-box;
+    border-radius: 2%;
+}
+
+.projetos li:hover {
+    border-color: var(--cor-links);
+    color: var(--cor-links);
+}
+
+.projetos li:hover h2 {
+    font-size: 40px;
+}
+
+.projetos h2 {
+    font-family: var(--fonte-titulos);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 2em;
+}
+
+.imagem-projeto {
+    height: 110.95px;
+    margin: auto;
+}
+
+.descricao-projeto {
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    padding: 2%;
+}
+
+footer {
+    color: var(--cor-titulos);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 10px;
+    background: black;
+    padding: 2%;
+}
+
+footer a {
+    color: var(--cor-links);
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+
+}
+
+form label, form legend {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: var(--cor-links);
+    color: var(--cor-titulos);
+    font-weight: 900;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: var(--cor-botao-selecionado);
+    transform:scale(1.2);
+}
+
+.social-media li {
+    display: inline;
+    padding: 1em;
+}
+
+.sign {
+    color: var(--cor-fundo);
+    text-decoration: none;
+}
+
+.sign:hover {
+    color: var(--cor-links);
+}
+
+@media screen and (max-width: 480px) {
+    .caixa,.projetos, .projetos li, main {
+        width: auto;
+    }
+
+    nav {
+        text-align: center;
+        position: static;
+        padding: 0 0 1em 0;
+    }
+}

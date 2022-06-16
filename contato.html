@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <label for="nome-sobrenome">Nome e sobrenome</label>
+            <input type="text" id="nome-sobrenome" class="input-padrao" required placeholder="Nome Sobrenome">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@exemplo.com">
+
+            <label for="whatsapp">WhatsApp</label>
+            <input type="tel" id="whatsapp" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required placeholder="Escreva sua mensagem aqui"></textarea>
+
+            <fieldset>
+                <legend>Como prefere que eu entre em contato?</legend>
+                <label for="radio-email">
+                    <input type="radio" value="email" id="radio-email" name="contato" checked>E-mail
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" value="email" id="radio-whatsapp" name="contato">WhatsApp
+                </label>
+
+                <label for="" class="checkbox">
+                    <input type="checkbox" checked>Gostaria de receber novidades.
+                </label>
+
+                <input type="submit" value="Enviar mensagem" class="enviar">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.linkedin.com/in/vitoria-avendano/" target="_blank">
+                        <img class="imagem-social" src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/White/LinkedIN_white.svg" alt="icon do linkedin">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://medium.com/@vitoria.avendano" target="_blank">
+                        <img class="imagem-social" src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/White/Medium_white.svg" alt="icon do medium">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/toriavendano" target="_blank">
+                        <img class="imagem-social" src="https://raw.githubusercontent.com/gauravghongde/social-icons/9d939e1c5b7ea4a24ac39c3e4631970c0aa1b920/SVG/White/Github_white.svg" alt="icon do github">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>&copy; Copyright <a href="https://github.com/toriavendano" target="_blank" class="sign">@toriavendano</a></p>  
+    </footer>
+</body>
+</html>
